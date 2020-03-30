@@ -1,10 +1,10 @@
 body {
     margin: 0px;
-    /* background-color: #21c08b; */
+    background: linear-gradient(180deg, rgba(2,180,196,1) 0%, rgba(1,99,108,1) 48%, rgba(0,0,0,1) 100%);
     font-family: 'Muli', sans-serif;
 }
 .header {
-    background-color: #21c08b;
+    background-color: transparent;
     width: 100%;
     height: 80px;
     display: flex;
@@ -56,7 +56,7 @@ body {
     text-decoration: underline;
 }
 .login {
-    background: linear-gradient(#21c08b,#ab88ff);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,13 +65,12 @@ body {
     min-height: calc(100vh - 200px);
 }
 .login__container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
     border-radius: 40px;
-    box-shadow: 1px 1px 15px white;
     color: white;
     padding: 50px 68px 40px;
-    min-height: 500px;
+    min-height: 600px;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -79,6 +78,15 @@ body {
 }
 .login__container > h2 {
     margin: 0 0 20px;
+}
+.login__container--sigin a {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.login__container--sigin a:hover {
+    text-decoration: underline;
 }
 .login__container--form {
     display: flex;
@@ -104,10 +112,10 @@ body {
     cursor: pointer;
 }
 .login__container--social-media > div:first-child > button{
-    background-color: rgb(264, 67, 53);
+    background-color: #00494F;
 }
 .login__container--social-media > div:last-child > button{
-    background-color: rgb(3,169,244);
+    background-color: #00494F;
 }
 .login__container--sigin {
     display: flex;
@@ -158,10 +166,16 @@ body {
     letter-spacing: 1px;
     margin: 10px 0;
 }
-
+.button a {
+    text-decoration: none;
+    color: white;
+}
+.button a:hover {
+    text-decoration: underline;
+}
 .footer {
-    background-color: #ab88ff;
-    padding: 50px 0;
+    background: transparent;
+    padding: 50px 0px 50px 30px;
     display: flex;
     justify-content: center;
 }
@@ -172,4 +186,16 @@ body {
 }
 .footer > a:hover {
     text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
